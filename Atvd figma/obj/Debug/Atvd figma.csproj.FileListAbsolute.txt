@@ -1,0 +1,11 @@
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\bin\Debug\Atvd figma.exe.config
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\bin\Debug\Atvd figma.exe
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\bin\Debug\Atvd figma.pdb
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd figma.csproj.AssemblyReference.cache
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd figma.csproj.SuggestedBindingRedirects.cache
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd_figma.Form1.resources
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd_figma.Properties.Resources.resources
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd figma.csproj.GenerateResource.cache
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd figma.csproj.CoreCompileInputs.cache
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd figma.exe
+C:\Users\2022102020004\source\repos\Atvd figma\Atvd figma\obj\Debug\Atvd figma.pdb
