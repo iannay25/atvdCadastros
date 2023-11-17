@@ -15,8 +15,62 @@ namespace Atvd_figma
         public Form1()
         {
             InitializeComponent();
+            Inserir();
+            Consultar();
         }
 
+        void Inserir()
+        {
+            var nomeFunc = "Iannay Luiza da Silva";
+            var cpfFunc = "040.107.302-35";
+
+            try
+            {
+                Conexao conexao = new Conexao();
+
+                var comando = conexao.Comando("INSERT INTO funcionario (nome_func, cpf_func) VALUES (@nome, @cpf)");
+
+                comando.Parameters.AddWithValue("@nome", nomeFunc);
+                comando.Parameters.AddWithValue("@cpf", cpfFunc);
+
+                var resultado = comando.ExecuteNonQuery();
+
+                if(resultado > 0)
+                {
+                    MessageBox.Show("Funcionário cadastrado com sucesso");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        void Consultar()
+        {
+            try
+            {
+                var conexao = new Conexao();
+
+                var comando = conexao.Comando("SELECT * FROM funcionario");
+
+                var leitor = comando.ExecuteReader();
+
+                string resultado = null;
+
+                while(leitor.Read())
+                {
+                    resultado += "\n" + leitor.GetString("nome_func");
+                }
+                MessageBox.Show(resultado);
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+         
+        }
         private void button2_Click(object sender, EventArgs e)
         {
 
