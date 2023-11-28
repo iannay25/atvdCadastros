@@ -7,7 +7,7 @@ namespace Atvd_figma
     {
         public string Id { get; set; }
         public string Nome { get; set; }
-        public DateTime Datanasc { get; set; }
+        public string Datanasc { get; set; }
         public string Cpf { get; set; }
         public string Rg { get; set; }
         public string Telefone { get; set; }
@@ -19,7 +19,7 @@ namespace Atvd_figma
 
         public Funcionario() { }
 
-        public Funcionario(string id, string nome, DateTime datanasc, string cpf, string rg, string telefone, string estadocivil,
+        public Funcionario(string id, string nome, string datanasc, string cpf, string rg, string telefone, string estadocivil,
             string funcao, string email, string endereco, double salario)
         {
             this.Id = id;

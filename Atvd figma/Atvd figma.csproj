@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DAOHelper.cs" />
     <Compile Include="Conexao\Conexao.cs" />
     <Compile Include="Classes\ConsultarEmpresa.cs" />
     <Compile Include="Telas\Empresa.cs">

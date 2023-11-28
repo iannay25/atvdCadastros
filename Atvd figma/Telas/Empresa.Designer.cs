@@ -49,14 +49,14 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.panelPorte = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewEmpresa = new System.Windows.Forms.DataGridView();
             this.tx_capital = new System.Windows.Forms.TextBox();
             this.cadastrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panelRegime.SuspendLayout();
             this.panelTipo.SuspendLayout();
             this.panelPorte.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
             // tx_nomefantasia
@@ -77,10 +77,10 @@
             // 
             // tx_nomeEm
             // 
-            this.tx_nomeEm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_nomeEm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_nomeEm.Location = new System.Drawing.Point(12, 106);
             this.tx_nomeEm.Name = "tx_nomeEm";
-            this.tx_nomeEm.Size = new System.Drawing.Size(193, 24);
+            this.tx_nomeEm.Size = new System.Drawing.Size(193, 22);
             this.tx_nomeEm.TabIndex = 2;
             // 
             // mask_datainicio
@@ -108,7 +108,7 @@
             this.mask_cnpj.Location = new System.Drawing.Point(18, 360);
             this.mask_cnpj.Mask = "99,999,999/9999-99";
             this.mask_cnpj.Name = "mask_cnpj";
-            this.mask_cnpj.Size = new System.Drawing.Size(167, 24);
+            this.mask_cnpj.Size = new System.Drawing.Size(141, 24);
             this.mask_cnpj.TabIndex = 5;
             // 
             // mask_telefone
@@ -117,7 +117,7 @@
             this.mask_telefone.Location = new System.Drawing.Point(18, 301);
             this.mask_telefone.Mask = "(99) 00000-0000";
             this.mask_telefone.Name = "mask_telefone";
-            this.mask_telefone.Size = new System.Drawing.Size(167, 24);
+            this.mask_telefone.Size = new System.Drawing.Size(116, 24);
             this.mask_telefone.TabIndex = 6;
             // 
             // cb_naturezajur
@@ -134,6 +134,7 @@
             this.cb_naturezajur.Name = "cb_naturezajur";
             this.cb_naturezajur.Size = new System.Drawing.Size(202, 26);
             this.cb_naturezajur.TabIndex = 7;
+            this.cb_naturezajur.SelectedIndexChanged += new System.EventHandler(this.cb_naturezajur_SelectedIndexChanged);
             // 
             // cb_situcaocadas
             // 
@@ -319,14 +320,16 @@
             this.panelPorte.Size = new System.Drawing.Size(107, 57);
             this.panelPorte.TabIndex = 20;
             // 
-            // dataGridView1
+            // dataGridViewEmpresa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(465, 67);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(458, 409);
-            this.dataGridView1.TabIndex = 21;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridViewEmpresa.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmpresa.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewEmpresa.Location = new System.Drawing.Point(465, 67);
+            this.dataGridViewEmpresa.Name = "dataGridViewEmpresa";
+            this.dataGridViewEmpresa.Size = new System.Drawing.Size(458, 409);
+            this.dataGridViewEmpresa.TabIndex = 21;
+            this.dataGridViewEmpresa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tx_capital
             // 
@@ -356,6 +359,7 @@
             this.button2.TabIndex = 24;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Empresa
             // 
@@ -366,7 +370,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cadastrar);
             this.Controls.Add(this.tx_capital);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewEmpresa);
             this.Controls.Add(this.panelPorte);
             this.Controls.Add(this.panelTipo);
             this.Controls.Add(this.cb_enderecocom);
@@ -383,13 +387,14 @@
             this.DoubleBuffered = true;
             this.Name = "Empresa";
             this.Text = "Empresa";
+            this.Load += new System.EventHandler(this.Empresa_Load);
             this.panelRegime.ResumeLayout(false);
             this.panelRegime.PerformLayout();
             this.panelTipo.ResumeLayout(false);
             this.panelTipo.PerformLayout();
             this.panelPorte.ResumeLayout(false);
             this.panelPorte.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmpresa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,7 +423,7 @@
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.Panel panelPorte;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewEmpresa;
         private System.Windows.Forms.TextBox tx_capital;
         private System.Windows.Forms.Button cadastrar;
         private System.Windows.Forms.Button button2;

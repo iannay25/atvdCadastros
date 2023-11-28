@@ -38,51 +38,51 @@
             this.tx_salario = new System.Windows.Forms.TextBox();
             this.tx_rg = new System.Windows.Forms.TextBox();
             this.masked_cpf = new System.Windows.Forms.MaskedTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewFuncio = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.cb_funcao = new System.Windows.Forms.ComboBox();
             this.cb_estadocivil = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncio)).BeginInit();
             this.SuspendLayout();
             // 
             // tx_nome
             // 
             this.tx_nome.BackColor = System.Drawing.SystemColors.Info;
             this.tx_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tx_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_nome.Location = new System.Drawing.Point(72, 162);
+            this.tx_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_nome.Location = new System.Drawing.Point(72, 169);
             this.tx_nome.Name = "tx_nome";
-            this.tx_nome.Size = new System.Drawing.Size(308, 28);
+            this.tx_nome.Size = new System.Drawing.Size(308, 19);
             this.tx_nome.TabIndex = 1;
             // 
             // tx_id
             // 
             this.tx_id.BackColor = System.Drawing.SystemColors.Info;
             this.tx_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tx_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_id.Location = new System.Drawing.Point(72, 94);
             this.tx_id.Name = "tx_id";
-            this.tx_id.Size = new System.Drawing.Size(83, 22);
+            this.tx_id.Size = new System.Drawing.Size(94, 14);
             this.tx_id.TabIndex = 2;
             // 
             // tx_email
             // 
             this.tx_email.BackColor = System.Drawing.SystemColors.Info;
             this.tx_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tx_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_email.Location = new System.Drawing.Point(439, 92);
             this.tx_email.Name = "tx_email";
-            this.tx_email.Size = new System.Drawing.Size(193, 24);
+            this.tx_email.Size = new System.Drawing.Size(193, 19);
             this.tx_email.TabIndex = 3;
             // 
             // tx_endereco
             // 
             this.tx_endereco.BackColor = System.Drawing.SystemColors.Info;
             this.tx_endereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tx_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_endereco.Location = new System.Drawing.Point(439, 162);
             this.tx_endereco.Name = "tx_endereco";
-            this.tx_endereco.Size = new System.Drawing.Size(181, 24);
+            this.tx_endereco.Size = new System.Drawing.Size(181, 19);
             this.tx_endereco.TabIndex = 6;
             // 
             // button_cadastrar
@@ -100,11 +100,11 @@
             // 
             this.masked_data.BackColor = System.Drawing.SystemColors.Info;
             this.masked_data.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.masked_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masked_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.masked_data.Location = new System.Drawing.Point(72, 235);
             this.masked_data.Mask = "0000-00-00";
             this.masked_data.Name = "masked_data";
-            this.masked_data.Size = new System.Drawing.Size(130, 24);
+            this.masked_data.Size = new System.Drawing.Size(130, 19);
             this.masked_data.TabIndex = 9;
             this.masked_data.ValidatingType = typeof(System.DateTime);
             // 
@@ -112,11 +112,11 @@
             // 
             this.masked_telefone.BackColor = System.Drawing.SystemColors.Info;
             this.masked_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.masked_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masked_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.masked_telefone.Location = new System.Drawing.Point(78, 385);
             this.masked_telefone.Mask = "(99) 00000-0000";
             this.masked_telefone.Name = "masked_telefone";
-            this.masked_telefone.Size = new System.Drawing.Size(124, 22);
+            this.masked_telefone.Size = new System.Drawing.Size(124, 19);
             this.masked_telefone.TabIndex = 10;
             // 
             // tx_salario
@@ -133,44 +133,48 @@
             // 
             this.tx_rg.BackColor = System.Drawing.SystemColors.Info;
             this.tx_rg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tx_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_rg.Location = new System.Drawing.Point(244, 317);
             this.tx_rg.Name = "tx_rg";
-            this.tx_rg.Size = new System.Drawing.Size(71, 24);
+            this.tx_rg.Size = new System.Drawing.Size(136, 19);
             this.tx_rg.TabIndex = 13;
             // 
             // masked_cpf
             // 
             this.masked_cpf.BackColor = System.Drawing.SystemColors.Info;
             this.masked_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.masked_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masked_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.masked_cpf.Location = new System.Drawing.Point(72, 317);
             this.masked_cpf.Mask = "000,000,000-00";
             this.masked_cpf.Name = "masked_cpf";
-            this.masked_cpf.Size = new System.Drawing.Size(150, 22);
+            this.masked_cpf.Size = new System.Drawing.Size(150, 19);
             this.masked_cpf.TabIndex = 14;
             // 
-            // dataGridView1
+            // dataGridViewFuncio
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(696, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(492, 344);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridViewFuncio.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewFuncio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFuncio.Location = new System.Drawing.Point(696, 34);
+            this.dataGridViewFuncio.Name = "dataGridViewFuncio";
+            this.dataGridViewFuncio.Size = new System.Drawing.Size(492, 344);
+            this.dataGridViewFuncio.TabIndex = 15;
+            this.dataGridViewFuncio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(261, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 23);
             this.button1.TabIndex = 16;
             this.button1.Text = "cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cb_funcao
             // 
+            this.cb_funcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_funcao.FormattingEnabled = true;
             this.cb_funcao.Items.AddRange(new object[] {
             "Gerente de Hotel",
@@ -183,11 +187,12 @@
             "Atendente"});
             this.cb_funcao.Location = new System.Drawing.Point(439, 309);
             this.cb_funcao.Name = "cb_funcao";
-            this.cb_funcao.Size = new System.Drawing.Size(121, 21);
+            this.cb_funcao.Size = new System.Drawing.Size(121, 24);
             this.cb_funcao.TabIndex = 17;
             // 
             // cb_estadocivil
             // 
+            this.cb_estadocivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_estadocivil.FormattingEnabled = true;
             this.cb_estadocivil.Items.AddRange(new object[] {
             "Solteiro(a)",
@@ -195,7 +200,7 @@
             "Viúvo(a)"});
             this.cb_estadocivil.Location = new System.Drawing.Point(439, 235);
             this.cb_estadocivil.Name = "cb_estadocivil";
-            this.cb_estadocivil.Size = new System.Drawing.Size(121, 21);
+            this.cb_estadocivil.Size = new System.Drawing.Size(121, 24);
             this.cb_estadocivil.TabIndex = 18;
             // 
             // Funcio
@@ -207,7 +212,7 @@
             this.Controls.Add(this.cb_estadocivil);
             this.Controls.Add(this.cb_funcao);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewFuncio);
             this.Controls.Add(this.masked_cpf);
             this.Controls.Add(this.tx_rg);
             this.Controls.Add(this.tx_salario);
@@ -220,7 +225,7 @@
             this.Controls.Add(this.button_cadastrar);
             this.Name = "Funcio";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,7 +242,7 @@
         private System.Windows.Forms.TextBox tx_salario;
         private System.Windows.Forms.TextBox tx_rg;
         private System.Windows.Forms.MaskedTextBox masked_cpf;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewFuncio;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cb_funcao;
         private System.Windows.Forms.ComboBox cb_estadocivil;

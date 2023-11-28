@@ -12,11 +12,12 @@ namespace Atvd_figma
 {
     public partial class Funcio : Form
     {
+        private List<Funcionario> listaFuncionarios = new List<Funcionario>();
         public Funcio()
         {
             InitializeComponent();
-           /* Inserir();*/
-            /*Consultar();*/
+            /* Inserir();*/
+            Consultar();
         }
 
         public void Inserir()
@@ -35,7 +36,7 @@ namespace Atvd_figma
 
                 var resultado = comando.ExecuteNonQuery();
 
-                if(resultado > 0)
+                if (resultado > 0)
                 {
                     MessageBox.Show("Funcionário cadastrado com sucesso");
                 }
@@ -59,25 +60,39 @@ namespace Atvd_figma
 
                 string resultado = null;
 
-                while(leitor.Read())
+                while (leitor.Read())
                 {
-                    resultado += "\n" + leitor.GetString("nome_func");
+                    Funcionario fun = new Funcionario();
+                    fun.Id = DAOHelper.GetString(leitor,"id_fun");
+                    fun.Nome = DAOHelper.GetString(leitor, "nome_fun" );
+                    fun.Datanasc = DAOHelper.GetString(leitor, "data_nasc_fun");
+                    fun.Cpf = DAOHelper.GetString(leitor, "cpf_fun");
+                    fun.Rg = DAOHelper.GetString(leitor, "rg_fun");
+                    fun.Telefone = DAOHelper.GetString(leitor, "telefone_fun");
+                    fun.Email = DAOHelper.GetString(leitor, "email_fun");
+                    fun.Endereco = DAOHelper.GetString(leitor, "endereco_fun");
+                    fun.EstadoCivil = DAOHelper.GetString(leitor, "estado_civil_fun");
+                    fun.Funcao = DAOHelper.GetString(leitor, "funcao_fun");
+                    fun.Salario = DAOHelper.GetDouble(leitor, "salario_fun");
+
+                    listaFuncionarios.Add(fun); 
                 }
-                MessageBox.Show(resultado);
+                dataGridViewFuncio.DataSource = null;
+                dataGridViewFuncio.Refresh();
+                dataGridViewFuncio.DataSource = listaFuncionarios;
 
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-         
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
             Funcionario funcionario = new Funcionario();
             funcionario.Id = tx_id.Text;
             funcionario.Nome = tx_nome.Text;
-            funcionario.Datanasc = DateTime.Now;
+            funcionario.Datanasc = masked_data.Text;
             funcionario.Cpf = masked_cpf.Text;
             funcionario.Rg = tx_rg.Text;
             funcionario.Telefone = masked_telefone.Text;
@@ -93,7 +108,8 @@ namespace Atvd_figma
             MessageBox.Show(Cpf.ValidaCPF(tx_email.Text).ToString());
 
             Inserir(funcionario);
-    
+
+
         }
         private void Inserir(Funcionario funcionario)
         {
@@ -124,11 +140,18 @@ namespace Atvd_figma
             {
                 throw ex;
             }
-            }
-
+        }
+    
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+
         }
     }
 

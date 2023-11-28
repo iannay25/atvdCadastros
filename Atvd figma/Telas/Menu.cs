@@ -15,6 +15,7 @@ namespace Atvd_figma
         public Menu()
         {
             InitializeComponent();
+            
         }
 
         private void funcionario_Click(object sender, EventArgs e)
@@ -25,6 +26,7 @@ namespace Atvd_figma
 
         private void Telaempresa_Click(object sender, EventArgs e)
         {
+            
             Empresa TE = new Empresa();
             TE.ShowDialog();
 
